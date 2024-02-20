@@ -98,8 +98,8 @@ const auto boostIO = []() {
             for (int i = 1; i <= static_cast<int>(s.size()); i++) {
                 pre_count1[i] = pre_count1[i - 1] * p1;
                 pre_count2[i] = pre_count2[i - 1] * p2;
-                h1[i] = h1[i - 1] * p1 + M(s[i - 1] - 'a', M1);
-                h2[i] = h2[i - 1] * p2 + M(s[i - 1] - 'a', M2);
+                h1[i] = h1[i - 1] * p1 + M(s[i - 1] - 'a' + 1, M1);
+                h2[i] = h2[i - 1] * p2 + M(s[i - 1] - 'a' + 1, M2);
             }
         }
 
